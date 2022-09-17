@@ -1,3 +1,10 @@
+<script setup lang="ts">
+defineProps<{
+  label: String;
+  type?: "submit" | "reset" | "button";
+}>();
+</script>
+
 <template>
   <button
     class="
@@ -16,10 +23,3 @@
     {{ label }}
   </button>
 </template>
-
-<script setup lang="ts">
-defineProps<{
-  label: String;
-  type: String;
-}>();
-</script>
