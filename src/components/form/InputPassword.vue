@@ -3,7 +3,7 @@
     <label for="{{name}}" class="font-medium text-xl">{{ label }}</label>
     <div class="relative">
       <input
-        type="text"
+        type="password"
         name="{{name}}"
         class="
           border border-gray-400
@@ -20,5 +20,9 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{ label: String; name: String; icon: any }>();
+defineProps<{
+  label: String;
+  name: String;
+  icon: any;
+}>();
 </script>
